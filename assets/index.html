@@ -17,19 +17,27 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
-  <body class="main-bg">
+  <body>
+
+    <input id="close-menu" class="close-menu" type="checkbox" 
+    aria-label="Close menu" role="button">
+    <label class="close-menu-label" 
+    for="close-menu" title="close menu"></label>
+
     <aside class="menu white-bg">
       <div class="main-content menu-content">
-        <h1>
+        <h1 onclick="getElementById('close-menu').checked = false;">
           <a href="#home">LOGO</a>
         </h1>
 
         <nav>
-          <ul>
+          <ul onclick="getElementById('close-menu').checked = false;">
             <li><a href="#intro">intro</a></li>
             <li><a href="#grid-one">grid-one</a></li>
             <li><a href="#gallery">gallery</a></li>
             <li><a href="#grid-two">grid-two</a></li>
+            <li><a href="#pricing">pricing</a></li>
+
             <li><a href="#contact">contact</a></li>
           </ul>
         </nav>
@@ -128,34 +136,40 @@
 
         <div class="grid">
           <div class="gallery-img">
-           <img 
-             src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&w=360" 
-             alt="random image from unsplash"/>
+            <img
+              src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&w=360"
+              alt="random image from unsplash"
+            />
           </div>
           <div class="gallery-img">
-           <img
-            src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?auto=format&w=360" 
-            alt="unsplash" />
+            <img
+              src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?auto=format&w=360"
+              alt="unsplash"
+            />
           </div>
           <div class="gallery-img">
-            <img 
-            src="https://images.unsplash.com/photo-1506765515384-028b60a970df?auto=format&w=360"
-            alt="unsplash" />
+            <img
+              src="https://images.unsplash.com/photo-1506765515384-028b60a970df?auto=format&w=360"
+              alt="unsplash"
+            />
           </div>
           <div class="gallery-img">
-            <img 
-            src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&w=360"
-            alt="unsplash" />
+            <img
+              src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&w=360"
+              alt="unsplash"
+            />
           </div>
           <div class="gallery-img">
-            <img 
-             src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&w=360"
-             alt="unsplash" />
+            <img
+              src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&w=360"
+              alt="unsplash"
+            />
           </div>
           <div class="gallery-img">
-           <img 
-            src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&w=360" 
-            alt="unsplash" />
+            <img
+              src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&w=360"
+              alt="unsplash"
+            />
           </div>
         </div>
       </div>
@@ -197,5 +211,159 @@
         </div>
       </div>
     </section>
+
+    <section id="pricing" class="white-bg section">
+      <div class="main-content top3-content">
+        <h2>Pricing</h2>
+        <p>
+          O lançamento dos Macs com Apple Silicon no final do ano passado gerou
+          uma onda de notícias e algumas surpresas quanto ao desempenho da
+          máquina. Este post detalha algumas informações básicas sobre a
+          experiência de portar o Firefox para rodar nativamente nessas CPUs.
+        </p>
+        <p>
+          Começaremos com alguns antecedentes sobre a transição para o Mac e
+          daremos uma visão geral dos detalhes internos do Firefox que você
+          precisa conhecer sobre a nova arquitetura, antes de passarmos para o
+          conceito de Binários Universais.
+        </p>
+
+        <div class="responsiv-table">
+          <table>
+            <caption>
+              Pricing table
+            </caption>
+
+            <thead>
+              <tr>
+                <th>Title 1</th>
+                <th>Title 2</th>
+                <th>Title 3</th>
+                <th>Title 4</th>
+                <th>Title 5</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Content 1</td>
+                <td>Content 2</td>
+                <td>Content 3</td>
+                <td>Content 4</td>
+                <td>Content 5</td>
+              </tr>
+              <tr>
+                <td>Content 1</td>
+                <td>Content 2</td>
+                <td>Content 3</td>
+                <td>Content 4</td>
+                <td>Content 5</td>
+              </tr>
+              <tr>
+                <td>Content 1</td>
+                <td>Content 2</td>
+                <td>Content 3</td>
+                <td>Content 4</td>
+                <td>Content 5</td>
+              </tr>
+            </tbody>
+
+            <tfoot>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Testando</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="intro main-bg section">
+      <div class="main-content intro-content">
+        <div class="intro-text-content">
+          <h2>Janeiro nos traz o Firefox 85.</h2>
+          <p>
+            Para encerrar janeiro, temos o orgulho de apresentar o lançamento do
+            Firefox 85. Nesta versão, estamos trazendo suporte para a
+            pseudo-classe :focus-visible em CSS e ferramentas de desenvolvedor
+            associadas, e a remoção completa do suporte ao Flash do Firefox.
+          </p>
+        </div>
+
+        <div class="intro-img">
+          <img
+            src="img/javascript-not-optimized.svg"
+            alt="Logo de HTML, CSS e JS."
+          />
+        </div>
+        <div class="contact-form">
+          <fieldset class="form-grid">
+            <legend>Contact me</legend>
+
+            <div class="form-group">
+              <label for="first-name">first name</label>
+              <input
+                type="text"
+                name="first-name"
+                id="first-name"
+                placeholder="Your name"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="last-name">Last name</label>
+              <input
+                type="text"
+                name="last-name"
+                id="last-name"
+                placeholder="Your last name"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Your email"
+              />
+            </div>
+
+            <div class="form-group full-width">
+              <label for="message">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="Your message"
+              ></textarea>
+            </div>
+
+            <div class="form-group full-width">
+              <button type="submit">Send message></button>
+            </div>
+          </fieldset>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer" class="footer white-bg">
+      <p>
+        <a
+          rel="nofollow"
+          target="_blank"
+          href="https://beacons.page/cristine"
+          >Feito com <span class="heart">❤</span> por Cristiane</a
+        >
+      </p>
+    </footer>
+
+    <a class="back-to-top" href="#">➤</a>
   </body>
 </html>
